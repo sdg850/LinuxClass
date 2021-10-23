@@ -1,0 +1,74 @@
+*. *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1{
+  color:blue ;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 30rem;
+  width: 20rem;
+  min-width: 10rem;
+  max-width: 20rem;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid blue;
+  row-gap: 1rem;
+  background-color: rgb(236, 231, 226);
+  box-shadow: .5rem .5rem 1rem gray;
+  animation: fadin 0.2s linear;
+}
+
+label {
+  margin-left: .5rem;
+  font-weight: bold;
+  color: blue;
+}
+
+input{
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  padding: .5rem;
+  color: blue;
+
+}
+
+
+button{
+  background-color: blue;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: white;
+  padding: 1rem;
+
+}
+
+button:hover{
+  background-color: rgb(6, 10, 6);
+  color: white;
+  font-weight: bold;
+  font-size: 1.025rem;
+}
+
+@keyframes fadin {
+  from{ transform: scale(0);}
+  to{transform: scale(1);}
+  
+}
