@@ -15,7 +15,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 
 
-$sql = "INSERT INTO estudiantes (nombre, apellido, email) VALUES ($name, $id, $email)";
+$sql = "INSERT INTO estudiantes (nombre, apellido, email) VALUES ('$name', '$id', '$email')";
 if (mysqli_query($conn, $sql)) {
 echo "New record created successfully";
 } else {
