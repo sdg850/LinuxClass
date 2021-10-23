@@ -13,7 +13,9 @@ echo "Connected successfully";
 $id = $_POST['id'];
 $name = $_POST['name'];
 $email = $_POST['email'];
-$sql = "INSERT INTO estudiantes (nombre, apellido, email) VALUES ($name, $id, $email, 'xxxxx')";
+
+
+$sql = "INSERT INTO estudiantes (nombre, apellido, email) VALUES ($name, $id, $email)";
 if (mysqli_query($conn, $sql)) {
 echo "New record created successfully";
 } else {
